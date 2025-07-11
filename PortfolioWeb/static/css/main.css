@@ -640,7 +640,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -1087,22 +1087,22 @@ section,
   position: relative;
 }
 
-.services .service-item .icon i {
+/* .services .service-item .icon i {
   font-size: 40px;
   transition: 0.5s;
   position: relative;
-}
+} */
 
 .services .service-item .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-
+/* 
 .services .service-item .icon svg path {
   transition: 0.5s;
   fill: color-mix(in srgb, var(--default-color), transparent 95%);
-}
+} */
 
 .services .service-item h3 {
   font-weight: 700;
@@ -1116,9 +1116,11 @@ section,
   margin-bottom: 10px;
 }
 
+/* 
 .services .service-item:hover {
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
+
 
 .services .service-item.item-cyan i {
   color: #0dcaf0;
@@ -1214,7 +1216,9 @@ section,
 
 .services .service-item.item-brown:hover .icon path {
   fill: #4b3328;
-}
+} */
+
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
