@@ -189,6 +189,7 @@ h6 {
   line-height: 0px;
 }
 
+
 @media (max-width: 1199px) {
   .header .logo {
     order: 1;
@@ -1085,6 +1086,7 @@ section,
   width: 100px;
   height: 100px;
   display: flex;
+  flex-direction: column; /* ← 추가 */
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -1095,6 +1097,11 @@ section,
 /* SVG 아이콘 */
 .services .service-item .icon svg {
   position: static;    /* 위로 올라가는 문제 방지 */
+}
+
+.services .service-item .icon .explan{
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 
@@ -1271,6 +1278,7 @@ section,
   text-align: center;
 }
 
+
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
@@ -1305,6 +1313,9 @@ section,
     margin: 0 0 10px 0;
   }
 }
+
+
+/* 
 
 .portfolio .portfolio-item {
   position: relative;
@@ -1360,6 +1371,47 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+} */
+
+/* 전체 아이템 박스 스타일 */
+.portfolio .portfolio-item .portfolio-wrap {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover .portfolio-wrap {
+  transform: scale(1.05);
+  border: 5px solid #6095c0;
+}
+
+
+/* 이미지 정사각형 비율 유지 */
+.portfolio .portfolio-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 정사각형 */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* 설명 부분 */
+.portfolio .portfolio-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.portfolio .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.portfolio .portfolio-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------

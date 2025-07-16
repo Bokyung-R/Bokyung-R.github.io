@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,66 +62,86 @@
     </div>
   </header>
 
-<main class="main">
+  <main class="main">
     <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio section">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
         <h2>포트폴리오</h2>
-        <p>포트폴리오로 올릴 사진들 게시</p>
-    </div><!-- End Section Title -->
+      </div><!-- End Section Title -->
 
-    <div class="container">
+      <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Card</li>
-                <li data-filter=".filter-branding">Web</li>
-            </ul><!-- End Portfolio Filters -->
+          <!-- 구분 버튼 -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-IoT">IoT</li>
+            <li data-filter=".filter-Web">Web</li>
+            <li data-filter=".filter-App">App</li>
+            <li data-filter=".filter-DB">DB</li>
+          </ul>
 
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <img src="./detailed_pro/img/pro1_main.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="./detailed_pro/img/pro1_main.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="./detailed_pro/project1.html"class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-IoT">
+              <div class="portfolio-wrap">
+                <a href="./detailed_pro/project1.html">
+                  <img src="./detailed_pro/img/finedust_detection_main.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>미세먼지 감지 창문 개폐</h4>
+                    <p>외부 미세먼지를 감지하여 창문을 자동으로 개폐</p>
+                  </div>
+              </a>
+              </div>
+            </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <img src="./detailed_pro/img/pro1_main.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="./detailed_pro/img/pro1_main.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="./detailed_pro/project1.html"class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-IoT">
+              <div class="portfolio-wrap">
+                <a href="./detailed_pro/project1.html">
+                  <img src="./detailed_pro/img/sleep_environment_control_main.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>수면환경 제어</h4>
+                    <p>질높은 수면을 위한 주변환경 제어</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-App">
+              <div class="portfolio-wrap">
+                <a href="./detailed_pro/project1.html">
+                  <img src="./detailed_pro/img/budget_book_main.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>가계부</h4>
+                    <p>WinForm으로 제작한 데스크탑 가계부 토이 프로젝트</p>
+                  </div>
+                </a>
+              </div>
+            </div>
 
 
-            </div><!-- End Portfolio Container -->
+          </div>
+
+ 
 
         </div>
 
-    </div>
+      </div>
 
-</section><!-- /Portfolio Section -->
+    </section><!-- /Portfolio Section -->
 
 
-</main>
+  </main>
 
   <footer id="footer" class="footer" style="background-color: #47799a;">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span>
+        </p>
       </div>
       <!-- <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -132,14 +154,16 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com/">ThemeWagon</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href="https://themewagon.com/">ThemeWagon</a>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
