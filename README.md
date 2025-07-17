@@ -1,3 +1,3 @@
 # Bokyung-R github.io
 
-[Bokyung-R Portfolio](./index.html)
+[Bokyung-R Portfolio](https://bokyung-r.github.io/)
