@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4b3328; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #346f97; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -164,7 +164,7 @@ h6 {
 .header .logo h1 {
   font-size: 32px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--heading-color);
 }
@@ -201,6 +201,7 @@ h6 {
 
   .header .navmenu {
     order: 3;
+    
   }
 }
 
@@ -236,7 +237,9 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    /* color: var(--nav-color); */
+    color: black;
+
     font-size: 15px;
     padding: 0 2px;
     font-family: var(--nav-font);
@@ -735,15 +738,18 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  /* color: var(--contrast-color);
+  background: var(--accent-color); */
+    color: #47799a;
+  background: white;
   font-family: var(--heading-font);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 12px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
+  border: 1px solid #47799a;
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
