@@ -1314,8 +1314,8 @@ section,
   }
 }
 
-
 /* 
+
 
 .portfolio .portfolio-item {
   position: relative;
@@ -1371,7 +1371,7 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
-} */
+}  */
 
 /* 전체 아이템 박스 스타일 */
 .portfolio .portfolio-item .portfolio-wrap {
@@ -1417,9 +1417,13 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+
+.portfolio-details .portfolio-details-slider .swiper-slide{
+  border: 2px solid #ddd;
+}
+
 .portfolio-details .portfolio-details-slider img {
-  max-height: 500px;
-  height: auto;
+  height: 800px;
   width: auto;
   max-width: 100%;
   display: block;
@@ -1448,7 +1452,7 @@ section,
 .portfolio-details .portfolio-info {
   background-color: var(--surface-color);
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1482,107 +1486,6 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-wrap {
-  background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-}
-
-@media (max-width: 575px) {
-  .contact .info-wrap {
-    padding: 20px;
-  }
-}
-
-.contact .info-item {
-  margin-bottom: 40px;
-}
-
-.contact .info-item i {
-  font-size: 20px;
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.contact .php-email-form {
-  background-color: var(--surface-color);
-  height: 100%;
-  padding: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
 /*--------------------------------------------------------------
@@ -1653,4 +1556,73 @@ section,
   object-position: center;  
   display: block;
   border-radius: 8px;        
+}
+
+/* ----------------------------------------------*/
+/* #smarthome_detailed_img {
+  height: 650px;
+  width: 850px;
+  overflow: hidden;
+  position: relative;
+  border: solid 2px #ddd;
+} */
+
+/* 
+#smarthome_detailed_img img,
+#smarthome_detailed_img video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: white;
+
+}  
+*/
+/* .portfolio-info {
+  background-color: var(--surface-color, #fff);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.05); 
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color, #000), transparent 85%);
+}
+
+
+.portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-description {
+  background-color: var(--surface-color, #fff);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.05); 
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-description h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color, #000), transparent 85%);
+}
+
+
+.portfolio-description ul li + li {
+  margin-top: 10px;
+}  */
+
+
+/*---------------------------*/
+
+.hyperlink{
+  color: blue; 
+  text-decoration: underline;
 }

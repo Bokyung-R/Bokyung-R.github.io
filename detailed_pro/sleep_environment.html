@@ -58,31 +58,100 @@
 
       <div class="header-social-links col-md-8">
       </div>
-
     </div>
   </header>
 
   <main class="main">
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>질높은 수면을 위한 주변환경 제어</h2>
+        <p>wpf 영화 즐겨찾기 / 유투브 api 활용 예고편 보기</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 ">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          }
+                        }
+                    </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="./img/sleep/structure.png" alt="영화검색">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/sleep/sleep_environment_control.png" alt="즐겨찾기 삭제">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/sleep/result.png" alt="">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info mb-3" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: IoT, Embedded System</li>
+                <li><strong>Tech Stack</strong>: Python, C/C++, MySQL, Flask</li>
+                <li><strong>Tools</strong>: Arduino IDE, VS Code, NodeMCU, DHT11, LCD, 부저 등</li>
+                <li><strong>Features</strong>: 수면 데이터 분석 및 환경 자동 제어</li>
+                <li><strong>Database</strong>: Sleep-ACCEL 기반 수면 단계 DB 설계 및 연동</li>
+                <li><strong>Duration</strong>: 약 2주일</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/GiveMeJobGroup/2025-IoT-MiniProject"
+                    target="_blank" class="hyperlink">Repository</span></a></li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h4>핵심 기능</h4>
+              <ul>
+                <li>PhysioNet 수면 데이터 전처리 및 CSV → MySQL DB 저장</li>
+                <li>Flask 서버를 통한 NodeMCU ↔ 아두이노 간 시리얼 통신</li>
+                <li>온습도, 조도 등 센서 데이터 수집 및 LCD 디스플레이 출력</li>
+                <li>DB 기반 사용자 수면 상태 분석 후 맞춤형 환경 제어</li>
+                <li>알람/메시지 출력 조건 설정 (D+R, FS, RT 기준)</li>
+                <li>부저, LED, LCD를 활용한 상황별 수면 환경 안내</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+        </div>
+
       </div>
 
-      <div class="container">
-        
-
-
-
-        
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
+    </section><!-- /Portfolio Details Section -->
 
   </main>
+
 
   <footer id="footer" class="footer" style="background-color: #47799a;">
 

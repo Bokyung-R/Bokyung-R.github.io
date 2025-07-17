@@ -58,31 +58,95 @@
 
       <div class="header-social-links col-md-8">
       </div>
-
     </div>
   </header>
 
   <main class="main">
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>WinForm 가계부 토이프로젝트</h2>
+        <h2>윈앱으로 가계부 만들기</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 ">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          }
+                        }
+                    </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <video controls autoplay muted loop style="width: 100%; height: 750px;">
+                    <source src="./img/budget/result.mp4" type="video/mp4">
+                    브라우저가 비디오 태그를 지원하지않습니다.
+                  </video>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/budget/image.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info mb-3" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Desktop Application</li>
+                <li><strong>Tech Stack</strong>: C#, WinForms</li>
+                <li><strong>Tools</strong>: Visual Studio</li>
+                <li><strong>Features</strong>: 가계부 입력 및 출력, 데이터 수정·삭제</li>
+                <li><strong>Data Storage</strong>: 월별 텍스트 파일(txt) 저장 방식</li>
+                <li><strong>Duration</strong>: 약 4시간</li>
+                <li><strong>Project File</strong>: <a href="https://github.com/Bokyung-R/WinApp_toyproject"
+                    target="_blank" class="hyperlink">Repository</a></li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h4>핵심 기능</h4>
+              <ul>
+                <li>날짜 선택 후 수입/지출, 항목, 가격 입력</li>
+                <li>선택한 날짜의 입력 내역 출력</li>
+                <li>한 달 총 수입/지출/잔액 자동 계산 및 출력</li>
+                <li>입력된 데이터 더블클릭 후 수정 가능, 수정 버튼으로 반영</li>
+                <li>선택한 항목 삭제 가능</li>
+                <li>텍스트 파일을 읽고 수정·삭제 시 전체 재작성 방식 사용</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="container">
-        
-
-
-
-        
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
+    </section><!-- /Portfolio Details Section -->
 
   </main>
+
 
   <footer id="footer" class="footer" style="background-color: #47799a;">
 

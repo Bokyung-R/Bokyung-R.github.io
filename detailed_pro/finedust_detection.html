@@ -58,47 +58,96 @@
 
       <div class="header-social-links col-md-8">
       </div>
-
     </div>
   </header>
 
   <main class="main">
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>미세먼지 감지 창문 개폐</h2>
-      </div>
+        <h2>미세먼지 감지 자동 창문 개폐</h2>
+      </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-5 ">
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-IoT">
-              <div class="portfolio-wrap">
-                <a href="./detailed_pro/finedust_detection.html">
-                  <img src="static/img/finedust_detection_main.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>미세먼지 감지 창문 개폐</h4>
-                    <p>외부 미세먼지를 감지하여 창문을 자동으로 개폐</p>
-                  </div>
-              </a>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          }
+                        }
+                    </script>
+
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="./img/finedust/hw2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/finedust/hw1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/finedust/structor.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/finedust/slot.png" alt="">
+                </div>
+                
+                
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            
           </div>
 
- 
+          <div class="col-lg-4">
+            <div class="portfolio-info mb-3" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: IoT / Embedded System</li>
+                <li><strong>Tech Stack</strong>: Arduino, 3D Printing</li>
+                <li><strong>Tools</strong>: Arduino IDE, TinkerCAD, Cura</li>
+                <li><strong>Features</strong>: 미세먼지 농도에 따라 자동으로 개폐되는 환기창</li>
+                <li><strong>Hardware</strong>: 아두이노, 서보모터, 미세먼지 센서</li>
+                <li><strong>Team</strong>: 3DUNO (6명)</li>
+                <li><strong>Duration</strong>: 약 3개월</li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h4>핵심 기능</h4>
+              <ul>
+                <li>미세먼지 센서를 통해 실내 공기 상태 측정</li>
+                <li>미세먼지 농도(PM 수치)에 따라 서보모터 제어</li>
+                <li>좋음(80 이하): 창문 열림 / 보통(150 이하): 절반 개방 / 나쁨(500 초과): 창문 닫힘</li>
+                <li>LCD로 실시간 미세먼지 수치 표시</li>
+                <li>3D 프린터를 이용해 창문 모형 및 기어 설계</li>
+              </ul>
+            </div>
+          </div>
+
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
-
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
